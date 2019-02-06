@@ -14,10 +14,6 @@ body{
   text-transform: none;
 }
 
-.page{
-  height: 100vh;
-}
-
 main{
   display: flex;
   height:85vh;
@@ -36,6 +32,8 @@ main>.left{
 main>.right{
   width:1103px;
   height:100%;
+  background-image: url("img/background.jpg");
+  background-size: cover;
 }
 
 /* Creazione navBar */
@@ -49,6 +47,9 @@ main>.right{
   height:100%;
 }
 
+.navBar:hover{
+  cursor:pointer;
+}
 .navBar>.logo{
   display:flex;
 }
@@ -69,7 +70,7 @@ main>.right{
   color: #b3b3b3;
   height: 40px;
   width:100%;
-  padding-left:30px;
+  padding-left:24px;
   line-height:40px;
 }
 
@@ -91,7 +92,7 @@ main>.right{
 .playlist-recent{
   color: #fff;
   opacity: .6;
-  padding-left:30px;
+  padding-left:24px;
   padding-top: 24px;
   padding-bottom: 7px;
 }
@@ -155,4 +156,15 @@ main>.right{
 
 .footer-nav .session-info span{
   padding-left: 16px;
+}
+
+
+/* Creazione della right part */
+
+.row>nav>ul{
+  list-style: none;
+}
+
+nav>ul>li{
+  display: inline-block;
 }
