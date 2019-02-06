@@ -1,0 +1,158 @@
+/* Creazione struttura */
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .015em;
+  color: #b3b3b3;
+  text-transform: none;
+}
+
+.page{
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  height:85vh;
+}
+
+footer{
+  height:15vh;
+  background-color: #282828;
+}
+
+main>.left{
+  width:230px;
+  height: 100%;
+}
+
+main>.right{
+  width:1103px;
+  height:100%;
+}
+
+/* Creazione navBar */
+.navBar{
+  background-color: black;
+  color:white;
+  padding-top: 24px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+
+.navBar>.logo{
+  display:flex;
+}
+
+.logo>img{
+  width: 131px;
+  height: 40px;
+  margin:auto;
+}
+
+.navBar>.list-menu{
+  padding-top:30px;
+  width: 100%;
+}
+
+.navBar>.list-menu>ul>li{
+  list-style-type: none;
+  color: #b3b3b3;
+  height: 40px;
+  width:100%;
+  padding-left:30px;
+  line-height:40px;
+}
+
+.navBar>.list-menu>ul>li>img{
+  width: 24px;
+  height: 24px;
+}
+
+.navBar>.list-menu>ul>li>span{
+  margin-left: 16px;
+}
+
+#home{
+  border-left: 3px solid #1ED760;
+  font-weight: 600;
+  color:white;
+}
+
+.playlist-recent{
+  color: #fff;
+  opacity: .6;
+  padding-left:30px;
+  padding-top: 24px;
+  padding-bottom: 7px;
+}
+
+.playlist-recent ul{
+  list-style-type: none;
+}
+
+.playlist-recent h2{
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: .015em;
+  color: #b3b3b3;
+  letter-spacing: .16em;
+}
+
+.playlist-recent p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 1px;
+  margin-right: -1px;
+  margin-bottom: 0;
+}
+
+.playlist-recent span{
+  margin-top:0;
+}
+
+.footer-nav{
+  margin-top: 50px;
+}
+
+.footer-nav .install{
+  padding: 0 24px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .015em;
+  margin-bottom: 8px;
+}
+
+.footer-nav .install img{
+  width: 20px;
+  height:20px;
+}
+
+.footer-nav .install>span{
+  padding-left: 16px;
+}
+
+.session-info{
+  padding: 8px 0;
+  margin: 0 24px;
+  border-top: 1px solid #404040;
+}
+
+.footer-nav .session-info img{
+  width:20px;
+  height: 20px;
+}
+
+.footer-nav .session-info span{
+  padding-left: 16px;
+}
