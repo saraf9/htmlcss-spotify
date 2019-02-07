@@ -16,17 +16,17 @@ body{
 
 main{
   display: flex;
-  height:85vh;
 }
 
 footer{
   height:15vh;
   background-color: #282828;
+  position: sticky;
+  bottom: 0;
 }
 
 main>.left{
   width:230px;
-  height: 100%;
 }
 
 main>.right{
@@ -50,6 +50,7 @@ main>.right{
 .navBar:hover{
   cursor:pointer;
 }
+
 .navBar>.logo{
   display:flex;
 }
@@ -139,6 +140,7 @@ main>.right{
   height:20px;
 }
 
+
 .footer-nav .install>span{
   padding-left: 16px;
 }
@@ -158,13 +160,85 @@ main>.right{
   padding-left: 16px;
 }
 
-
 /* Creazione della right part */
 
-.row>nav>ul{
-  list-style: none;
+.content{
+  padding: 0 32px;
+  margin: 0 auto;
+  max-width: 1480px;
 }
 
-nav>ul>li{
+.nav-main{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+}
+
+.nav-main .bar{
+  justify-content: center;
+}
+
+.bar>span{
+  justify-content: center;
+  font-size: 12px;
+  line-height: 16px;
+  border: 0;
   display: inline-block;
+  margin: 10px;
+  padding: 5px 10px;
+  letter-spacing: .16em;
+  color: #b3b3b3;
+}
+
+#selected{
+  color: #fff;
+}
+
+.header>h1{
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -.005em;
+  font-weight: 600;
+  color: #fff;
+  text-transform: none;
+  margin: 24px 0;
+}
+
+.image{
+  height:153px;
+  width: 153px;
+  background-size: cover;
+}
+
+.image>img{
+  width:100%;
+  height:100%;
+}
+
+.description{
+  margin: 12px 0 4px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  display: block;
+}
+
+.description>a{
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .015em;
+  color: #fff;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.overable-button:hover{
+  cursor: pointer;
+  filter:opacity(0.5) grayscale(1);
+}
+
+.description>.info{
+  display: block;
 }
