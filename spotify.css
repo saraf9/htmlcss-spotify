@@ -158,6 +158,8 @@ main>.right{
 .menu-left>img{
   width:40px;
   height:40px;
+  display: flex;
+  flex-direction: column;
 }
 /* Creazione della right part */
 
@@ -367,6 +369,11 @@ padding-left: 50px;
   background-color:#1ED760;
 }
 
+.invisible-button{
+  font-size: 35px;
+  display: none;
+}
+
 /* Creazione media query per la responsiveness */
 @media all and (max-width:768px) {
   nav{
@@ -380,7 +387,18 @@ padding-left: 50px;
     display: none;
   }
 
-  main>.right{
-    margin-left: 170px;
+    main>.right{
+      margin-left: 170px;
   }
+
+  .heart , .player-bar , .volume{
+    display: none;
+  }
+
+  .invisible-button{
+    display: inline-block;
+  }
+
+
+
 }
