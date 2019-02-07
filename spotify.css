@@ -151,6 +151,14 @@ main>.right{
   padding-left: 16px;
 }
 
+.menu-left{
+  display:none;
+}
+
+.menu-left>img{
+  width:40px;
+  height:40px;
+}
 /* Creazione della right part */
 
 .content{
@@ -165,7 +173,6 @@ main>.right{
   display: flex;
   justify-content: center;
 }
-
 
 .bar>span{
   justify-content: center;
@@ -358,4 +365,22 @@ padding-left: 50px;
 
 .volume-bar:hover{
   background-color:#1ED760;
+}
+
+/* Creazione media query per la responsiveness */
+@media all and (max-width:768px) {
+  nav{
+    width:170px;
+  }
+  .menu-left{
+    display: block;
+  }
+
+    .list-menu>ul , .playlist-recent{
+    display: none;
+  }
+
+  main>.right{
+    margin-left: 170px;
+  }
 }
