@@ -202,7 +202,6 @@ main>.right{
 .image{
   height:153px;
   width: 153px;
-  background-size: cover;
 }
 
 .image>img{
@@ -229,9 +228,25 @@ main>.right{
   font-weight: 600;
 }
 
-.overable-button:hover{
+.layover{
+  height:153px;
+  width: 153px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.81);
+  top: 0;
+  display: none;
+}
+
+.layover>i{
+  font-size: 60px;
+}
+
+.overable-button:hover .layover{
   cursor: pointer;
-  filter:opacity(0.5) grayscale(1);
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .description>.info{
